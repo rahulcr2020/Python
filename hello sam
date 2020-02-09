@@ -1,0 +1,4 @@
+"""To Print Hello Sam"""
+
+name=input("Enter the Username:-")
+print("Hello",name)
