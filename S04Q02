@@ -1,0 +1,33 @@
+def results_marks(eng,sci,maths):
+    total1=eng+sci+maths
+    percentage=(total1/total)*100
+    if percentage>=90:
+        print("First class")
+    elif percentage>=75:
+        print("Second Class")
+    elif percentage>=35:
+        print("Average")
+    else:
+        print("Failed")
+
+
+
+def get_marks():
+    eng=int(input("Enter the marks for english"))
+    sci=int(input("Enter the marks for science"))
+    maths=int(input("enter the marks for mathematics"))
+    return eng,sci,maths
+
+
+
+subj,subj2,sub3=get_marks()
+eng=80
+sci=90
+maths=100
+total=eng+sci+maths
+results_marks(subj,subj2,sub3)
+
+
+
+
+
