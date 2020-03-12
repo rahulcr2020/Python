@@ -1,0 +1,18 @@
+def perform_check(number):
+    if (number > 9) and (number < 100):
+        print("the number is two digit number:")
+    elif (number > 99) and (number < 1000):
+        print("The number is three digit number")
+    else:
+        print("the number is:",number)
+
+def get_number():
+    num3=int(input("Enter the first  number\n"))
+    num4=int(input("Enter the second number\n"))
+    return  num3,num4
+    
+
+# Main starts from here
+num1,num2 = get_number()
+perform_check(num1)
+perform_check(num2)
