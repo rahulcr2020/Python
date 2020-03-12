@@ -1,0 +1,28 @@
+def perform_check(number):
+    if (number >=0) and (number < 10):
+        print("the number is single digit number:")
+        num2=number+7
+        num3=num2%10
+        print("the unit place of the number is:",num3)
+        
+    if (number > 9) and (number < 100):
+        print("the number is two digit number:")
+        num4=number**5
+        print("the power of the number:",num4)
+        num5=number%10
+        print("the unit place of the number is:",num5)
+        
+    elif (number > 99) and (number < 1000):
+        print("The number is three digit number")
+        num6=int(input("Enter the number\n"))
+        num7=num6+number
+        num8=num7%10
+        print("the unit place of the number is:",num8)
+
+    
+def get_number():
+    num1=int(input("Enter the number\n"))
+    num2=int(input("Enter the number\n"))
+    num3=int(input("Enter the number\n"))
+    return num1,num2,num3
+    
