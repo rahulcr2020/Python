@@ -1,0 +1,24 @@
+
+
+def do_action(present, redmark, bluemark):
+    # Compare present with redmark and bluemark
+    # to decide the appropriate action
+
+    if (present > high):
+        print("Close the valve")
+    elif (present < low):
+        print("buy more liquid")
+    else:
+        print("tank is fine")
+        
+
+def get_current_level():
+    current=int(input("enter the current level"))
+    return current        
+
+# Main starts from here
+capacity = 900
+high = 80/100*capacity
+low = 20/100*capacity
+level = get_current_level()
+do_action(level, high, low)
